@@ -38,10 +38,7 @@
             }
         },
         "commands": [
-            {
-                "command": "extension.sayHello",
-                "title": "Hello World!"
-            },
+
             {
                 "command": "extension.demo.getCurrentFilePath",
                 "title": "查看当前文件(夹)路径"
@@ -58,36 +55,18 @@
                     "dark": "./images/tool-light.svg"
                 }
             },
-            {
-                "command": "extension.demo.openWebview",
-                "title": "打开WebView"
-            },
+
             {
                 "command": "extension.demo.showWelcome",
                 "title": "显示自定义欢迎页"
             }
         ],
         "keybindings": [
-            {
-                "command": "extension.sayHello",
-                "key": "ctrl+f10",
-                "mac": "cmd+f10",
-                "when": "editorTextFocus"
-            },
-            {
-                "command": "extension.demo.openWebview",
-                "key": "ctrl+f9",
-                "mac": "cmd+f9",
-                "when": "editorTextFocus"
-            }
+
         ],
         "menus": {
             "editor/context": [
-                {
-                    "when": "editorFocus",
-                    "command": "extension.sayHello",
-                    "group": "navigation@6"
-                },
+
                 {
                     "when": "editorFocus",
                     "command": "extension.demo.getCurrentFilePath",
@@ -101,11 +80,8 @@
                     "when": "editorFocus && resourceLangId == javascript",
                     "command": "extension.demo.testMenuShow",
                     "group": "z_commands"
-                },
-                {
-                    "command": "extension.demo.openWebview",
-                    "group": "navigation"
                 }
+
             ],
             "editor/title": [
                 {
@@ -125,11 +101,8 @@
                 {
                     "command": "extension.demo.getCurrentFilePath",
                     "group": "navigation"
-                },
-                {
-                    "command": "extension.demo.openWebview",
-                    "group": "navigation"
                 }
+
             ]
         },
         "snippets": [

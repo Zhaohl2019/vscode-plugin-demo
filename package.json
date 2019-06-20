@@ -27,7 +27,7 @@
             "properties": {
                 "vscodePluginDemo.yourName": {
                     "type": "string",
-                    "default": "guest",
+                    "default": "赵",
                     "description": "你的名字"
                 },
                 "vscodePluginDemo.showTip": {
@@ -40,11 +40,15 @@
         "commands": [
             {
                 "command": "extension.sayHello",
-                "title": "Hello，小茗同学"
+                "title": "Hello World!"
             },
             {
                 "command": "extension.demo.getCurrentFilePath",
-                "title": "获取当前文件(夹)路径"
+                "title": "查看当前文件(夹)路径"
+            },
+            {
+                "command": "extension.CompileRun",
+                "title": "Compile & Run C/C++"
             },
             {
                 "command": "extension.demo.testMenuShow",
@@ -87,6 +91,10 @@
                 {
                     "when": "editorFocus",
                     "command": "extension.demo.getCurrentFilePath",
+                    "group": "navigation@5"
+                },
+                {
+                    "command": "extension.CompileRun",
                     "group": "navigation@5"
                 },
                 {

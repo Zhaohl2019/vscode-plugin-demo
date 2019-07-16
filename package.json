@@ -48,6 +48,10 @@
                 "title": "Compile & Run C/C++"
             },
             {
+                "command": "python.execInTerminal",
+                "title": "在终端运行python文件"
+            },            
+            {
                 "command": "extension.demo.testMenuShow",
                 "title": "这个菜单仅在JS文件中出现",
                 "icon": {
@@ -74,6 +78,10 @@
                 },
                 {
                     "command": "extension.CompileRun",
+                    "group": "navigation@5"
+                },
+                {
+                    "command": "python.execInTerminal",
                     "group": "navigation@5"
                 },
                 {
